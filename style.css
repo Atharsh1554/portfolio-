@@ -2262,7 +2262,18 @@ input, textarea, select {
   }
 
   .hero-roles {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    gap: 0.3rem;
+  }
+
+  .role-typing {
+    white-space: normal;
+    text-align: center;
+    overflow-wrap: break-word;
+    max-width: 100%;
   }
 
   .hero-summary {
@@ -2409,8 +2420,18 @@ input, textarea, select {
 
   .hero-roles {
     font-size: 1.1rem;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: auto;
+    gap: 0.3rem;
+  }
+
+  .role-typing {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    max-width: 100%;
+    text-align: center;
   }
 
   .hero-cta {
