@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080d1a"/>
+      <stop offset="50%" stop-color="#141832"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </linearGradient>
+    <linearGradient id="violetPink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cyanViolet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <filter id="glow3" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bgGrad3)"/>
+  
+  <circle cx="200" cy="140" r="140" fill="#8b5cf6" opacity="0.16" filter="url(#glow3)"/>
+  <circle cx="600" cy="310" r="150" fill="#06b6d4" opacity="0.14" filter="url(#glow3)"/>
+
+  <!-- Window Container -->
+  <rect x="80" y="55" width="640" height="340" rx="16" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5"/>
+  
+  <!-- Header -->
+  <rect x="80" y="55" width="640" height="42" rx="16" fill="rgba(30, 41, 59, 0.6)"/>
+  <circle cx="110" cy="76" r="6" fill="#ef4444"/>
+  <circle cx="130" cy="76" r="6" fill="#f59e0b"/>
+  <circle cx="150" cy="76" r="6" fill="#10b981"/>
+  <text x="400" y="81" fill="#94a3b8" font-family="'Inter', -apple-system, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Atharsh S — Portfolio Architecture &amp; Interactive Hub</text>
+
+  <!-- Left: Hero Preview Mockup -->
+  <g transform="translate(110, 120)">
+    <rect x="0" y="0" width="320" height="250" rx="12" fill="rgba(30, 41, 59, 0.4)" stroke="rgba(255, 255, 255, 0.05)"/>
+    <text x="25" y="45" fill="#06b6d4" font-family="'Inter', sans-serif" font-size="13" font-weight="700">HI, I AM</text>
+    <text x="25" y="80" fill="#ffffff" font-family="'Inter', sans-serif" font-size="28" font-weight="800">Atharsh S</text>
+    <text x="25" y="110" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="14" font-weight="600">Computer Science &amp; Engineering</text>
+    
+    <!-- Pills -->
+    <rect x="25" y="130" width="85" height="24" rx="12" fill="rgba(6, 182, 212, 0.15)"/>
+    <text x="67" y="146" fill="#22d3ee" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">R.M.D. Engg</text>
+
+    <rect x="120" y="130" width="75" height="24" rx="12" fill="rgba(139, 92, 246, 0.15)"/>
+    <text x="157" y="146" fill="#c084fc" font-family="'Inter', sans-serif" font-size="10" font-weight="600" text-anchor="middle">CGPA 8.45</text>
+
+    <rect x="25" y="180" width="130" height="38" rx="8" fill="url(#cyanViolet)"/>
+    <text x="90" y="204" fill="#ffffff" font-family="'Inter', sans-serif" font-size="12" font-weight="700" text-anchor="middle">Explore Work &#8594;</text>
+  </g>
+
+  <!-- Right: Feature Cards Mockup -->
+  <g transform="translate(450, 120)">
+    <!-- Feature 1 -->
+    <rect x="0" y="0" width="245" height="72" rx="10" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <circle cx="35" cy="36" r="16" fill="rgba(6, 182, 212, 0.2)"/>
+    <text x="35" y="41" fill="#06b6d4" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#128196;</text>
+    <text x="65" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Document Viewer</text>
+    <text x="65" y="50" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">PDF &amp; Image modal with zoom</text>
+
+    <!-- Feature 2 -->
+    <rect x="0" y="88" width="245" height="72" rx="10" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <circle cx="35" cy="124" r="16" fill="rgba(139, 92, 246, 0.2)"/>
+    <text x="35" y="129" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#127979;</text>
+    <text x="65" y="120" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Academic Records</text>
+    <text x="65" y="138" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Semester dashboard &amp; SGPAs</text>
+
+    <!-- Feature 3 -->
+    <rect x="0" y="176" width="245" height="72" rx="10" fill="rgba(30, 41, 59, 0.5)" stroke="rgba(255, 255, 255, 0.06)"/>
+    <circle cx="35" cy="212" r="16" fill="rgba(236, 72, 153, 0.2)"/>
+    <text x="35" y="217" fill="#f472b6" font-family="'Inter', sans-serif" font-size="14" font-weight="800" text-anchor="middle">&#9881;</text>
+    <text x="65" y="208" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13" font-weight="600">Central Data Model</text>
+    <text x="65" y="226" fill="#94a3b8" font-family="'Inter', sans-serif" font-size="11">Single file portfolio-data.js</text>
+  </g>
+</svg>

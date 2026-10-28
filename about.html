@@ -1,208 +1,318 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Atharsh S</title>
-    <meta name="description"
-        content="Learn more about Atharsh S — a passionate Computer Science student, problem solver, and aspiring software developer.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="about.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Atharsh S — Engineering Journey &amp; Philosophy</title>
+
+  <meta name="description" content="Discover the academic journey, philosophy, and background of Atharsh S — 2nd-year B.E. Computer Science student at R.M.D. Engineering College and Cambridge Business Studies alumnus.">
+  <meta name="keywords" content="Atharsh S, About Atharsh, RMD Engineering College, Cambridge Business Studies, Computer Science Student, Philosophy, Journey">
+  <meta name="author" content="Atharsh S">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About Atharsh S — Engineering Journey &amp; Philosophy">
+  <meta property="og:description" content="Computer Science &amp; Engineering student at R.M.D. Engineering College. Cambridge Business Studies certification holder.">
+  <meta property="og:image" content="profile.jpg.JPG">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="profile.jpg.JPG">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <a href="index.html" class="logo">Atharsh<span>.</span></a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html" class="active">About</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#certifications">Certifications</a></li>
-                <li><a href="index.html#projects">Projects</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+  <!-- ========================================================================
+       STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Atharsh S Homepage">
+          Atharsh<span class="dot"></span>
+        </a>
 
-    <main>
-        <!-- About Hero -->
-        <section id="about-hero" class="about-hero fade-in">
-            <div class="container">
-                <div class="about-hero-grid">
-                    <div class="about-hero-image">
-                        <div class="image-frame">
-                            <img src="profile.jpg.JPG" alt="Atharsh S">
-                            <div class="image-glow"></div>
-                        </div>
-                    </div>
-                    <div class="about-hero-text">
-                        <p class="label-tag"><i class="fas fa-user"></i> About Me</p>
-                        <h1>I'm <span class="highlight">Atharsh S</span></h1>
-                        <p class="tagline">A curious mind building the future, one line of code at a time.</p>
-                        <p class="bio">
-                            I'm a dedicated 2nd-year B.E. Computer Science and Engineering student at
-                            R.M.D. Engineering College with a strong academic foundation and a deep
-                            passion for technology. Having completed Business Studies at the University of
-                            Cambridge, I combine management acumen with technical expertise to approach
-                            problems holistically.
-                        </p>
-                        <p class="bio">
-                            As a CICSE alumnus, I bring discipline, adaptability, and a relentless
-                            willingness to learn. My interests span software development, problem-solving,
-                            and innovation — and I'm always eager to collaborate on projects that push the
-                            boundaries of what's possible.
-                        </p>
-                        <div class="about-hero-stats">
-                            <div class="stat-item">
-                                <span class="stat-number">5+</span>
-                                <span class="stat-label">Certifications</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">3+</span>
-                                <span class="stat-label">Projects</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number">6+</span>
-                                <span class="stat-label">Technologies</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Desktop Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html#hero" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="index.html#academics" class="nav-link">Academics</a></li>
+          <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+          <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+          <li><a href="index.html#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+          <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-        <!-- Journey / Timeline Section -->
-        <section id="journey" class="journey-section fade-in">
-            <div class="container">
-                <h2 class="section-title">My Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Present</span>
-                            <h3>B.E. Computer Science & Engineering</h3>
-                            <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> R.M.D Engineering College, Chennai</p>
-                            <p>Currently in my 2nd year, building a strong foundation in algorithms, data structures, web development, and software engineering principles.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Completed</span>
-                            <h3>Business Studies</h3>
-                            <p class="timeline-place"><i class="fas fa-map-marker-alt"></i> University of Cambridge</p>
-                            <p>Strengthened management and strategic thinking skills alongside technical expertise through rigorous coursework and academic exploration.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <span class="timeline-date">Foundation</span>
-                            <h3>CICSE Alumnus</h3>
-                            <p class="timeline-place"><i class="fas fa-graduation-cap"></i> CICSE Board</p>
-                            <p>Developed discipline, adaptability, and a strong academic ethic that continues to drive my professional growth.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- What Drives Me -->
-        <section id="drives" class="drives-section fade-in">
-            <div class="container">
-                <h2 class="section-title">What Drives Me</h2>
-                <div class="drives-grid">
-                    <div class="drive-card">
-                        <div class="drive-icon"><i class="fas fa-code"></i></div>
-                        <h3>Clean Code</h3>
-                        <p>I believe in writing code that is not just functional, but elegant, readable, and maintainable. Good code tells a story.</p>
-                    </div>
-                    <div class="drive-card">
-                        <div class="drive-icon"><i class="fas fa-lightbulb"></i></div>
-                        <h3>Problem Solving</h3>
-                        <p>Every bug is a puzzle, every challenge an opportunity. I thrive on breaking down complex problems into simple, effective solutions.</p>
-                    </div>
-                    <div class="drive-card">
-                        <div class="drive-icon"><i class="fas fa-rocket"></i></div>
-                        <h3>Innovation</h3>
-                        <p>Technology evolves rapidly, and so do I. I'm constantly exploring new frameworks, tools, and methodologies to stay ahead.</p>
-                    </div>
-                    <div class="drive-card">
-                        <div class="drive-icon"><i class="fas fa-users"></i></div>
-                        <h3>Collaboration</h3>
-                        <p>The best ideas emerge through teamwork. I value open communication, constructive feedback, and collective growth.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Interests & Hobbies -->
-        <section id="interests" class="interests-section fade-in">
-            <div class="container">
-                <h2 class="section-title">Beyond Code</h2>
-                <div class="interests-grid">
-                    <div class="interest-item">
-                        <i class="fas fa-book-reader"></i>
-                        <span>Reading & Research</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-chess"></i>
-                        <span>Strategic Games</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-microchip"></i>
-                        <span>Emerging Tech</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-palette"></i>
-                        <span>UI/UX Design</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-brain"></i>
-                        <span>AI & ML</span>
-                    </div>
-                    <div class="interest-item">
-                        <i class="fas fa-globe"></i>
-                        <span>Open Source</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Call to Action -->
-        <section id="about-cta" class="about-cta fade-in">
-            <div class="container">
-                <div class="cta-card">
-                    <h2>Let's Build Something Together</h2>
-                    <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of something amazing.</p>
-                    <div class="cta-buttons">
-                        <a href="index.html#contact" class="btn btn-primary">Get In Touch</a>
-                        <a href="index.html#projects" class="btn btn-secondary">View Projects</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Atharsh S</p>
-            <a href="#about-hero" class="back-to-top" aria-label="Back to top">
-                <i class="fas fa-arrow-up"></i>
-            </a>
+        <!-- Action Items (Theme Toggle & Mobile Menu) -->
+        <div class="nav-actions">
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle light/dark theme" title="Toggle Theme">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button id="hamburger-btn" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </footer>
+      </nav>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <!-- About Hero Section -->
+    <section class="section about-page-hero">
+      <div class="container">
+        <div class="about-hero-grid">
+          <div class="about-profile-frame">
+            <img src="profile.jpg.JPG" alt="Atharsh S" width="380" height="440">
+          </div>
+
+          <div>
+            <span class="section-badge"><i class="fas fa-user-circle"></i> In-Depth Profile</span>
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.8rem;">
+              Atharsh <span class="gradient-text">S</span>
+            </h1>
+            <p style="font-size: 1.25rem; font-weight: 600; color: var(--accent-cyan); margin-bottom: 1.2rem;">
+              Computer Science &amp; Engineering Student &bull; Software Developer
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem; font-size: 1.05rem;">
+              I am a dedicated 2nd-year B.E. Computer Science and Engineering student at R.M.D. Engineering College (Anna University affiliated). With an analytical mindset rooted in algorithmic problem-solving and an international credential in Business Studies from the University of Cambridge, I bridge deep technical precision with organizational and product strategy.
+            </p>
+            <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem; font-size: 1.05rem;">
+              As an alumnus of the rigorous CICSE board, I bring discipline, adaptability, and high standards of execution. Whether architecting backend slot allocation engines or analyzing multidimensional datasets in Python, I strive to write software that is reliable, scalable, and human-centered.
+            </p>
+
+            <div class="about-quick-stats">
+              <div class="quick-stat-box">
+                <div class="quick-stat-num">8.45</div>
+                <div class="quick-stat-lbl">CGPA (Sem 1–3)</div>
+              </div>
+              <div class="quick-stat-box">
+                <div class="quick-stat-num">5+</div>
+                <div class="quick-stat-lbl">Certifications</div>
+              </div>
+              <div class="quick-stat-box">
+                <div class="quick-stat-num">3+</div>
+                <div class="quick-stat-lbl">Major Projects</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Journey Timeline -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-route"></i> Trajectory</span>
+          <h2 class="section-title">My Academic <span class="gradient-text">Journey</span></h2>
+          <p class="section-subtitle">Milestones that have shaped my technical approach and work ethic.</p>
+        </div>
+
+        <div class="timeline-vertical" style="max-width: 800px;">
+          <!-- Milestone 1 -->
+          <div class="timeline-item-v">
+            <div class="timeline-bullet-v"></div>
+            <div class="timeline-content-v">
+              <div class="timeline-top-row">
+                <h3>B.E. Computer Science &amp; Engineering</h3>
+                <span class="timeline-date-tag">2023 – Present</span>
+              </div>
+              <div class="timeline-org">
+                <i class="fas fa-university"></i> R.M.D. Engineering College, Chennai (Anna University)
+              </div>
+              <p class="timeline-desc">
+                Currently in 2nd year. Mastering Data Structures &amp; Algorithms, Object-Oriented Programming in Java, Database Management Systems, and Cloud computing paradigms with consistent high academic distinction (CGPA 8.45).
+              </p>
+              <div class="timeline-tags-row">
+                <span class="project-tech-tag">Data Structures</span>
+                <span class="project-tech-tag">Java OOP</span>
+                <span class="project-tech-tag">DBMS</span>
+                <span class="project-tech-tag">Web Technologies</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item-v">
+            <div class="timeline-bullet-v"></div>
+            <div class="timeline-content-v">
+              <div class="timeline-top-row">
+                <h3>Business Studies Credential</h3>
+                <span class="timeline-date-tag">Completed</span>
+              </div>
+              <div class="timeline-org">
+                <i class="fas fa-graduation-cap"></i> University of Cambridge
+              </div>
+              <p class="timeline-desc">
+                Completed rigorous international coursework in business operations, strategic resource allocation, financial fundamentals, and organizational leadership, broadening my ability to assess technical solutions against commercial utility.
+              </p>
+              <div class="timeline-tags-row">
+                <span class="project-tech-tag">Strategic Planning</span>
+                <span class="project-tech-tag">Business Analysis</span>
+                <span class="project-tech-tag">Operations</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item-v">
+            <div class="timeline-bullet-v"></div>
+            <div class="timeline-content-v">
+              <div class="timeline-top-row">
+                <h3>Higher Secondary &amp; Secondary (Class XII &amp; X)</h3>
+                <span class="timeline-date-tag">2021 – 2023</span>
+              </div>
+              <div class="timeline-org">
+                <i class="fas fa-school"></i> CICSE Board (ISC &amp; ICSE)
+              </div>
+              <p class="timeline-desc">
+                Graduated with First Class distinction in the demanding Science &amp; Mathematics stream. Built deep roots in physics, chemistry, analytical calculus, and computer applications.
+              </p>
+              <div class="timeline-tags-row">
+                <span class="project-tech-tag">Advanced Mathematics</span>
+                <span class="project-tech-tag">Physics</span>
+                <span class="project-tech-tag">Analytical Reasoning</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Philosophy -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-compass"></i> Guiding Principles</span>
+          <h2 class="section-title">What Drives <span class="gradient-text">My Work</span></h2>
+          <p class="section-subtitle">Core principles I follow when designing software and collaborating in teams.</p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-code"></i></div>
+            <h3>Clean Architecture</h3>
+            <p>Code should be readable, modular, and maintainable. Writing clear abstractions saves engineering hours down the line.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <h3>First-Principles Problem Solving</h3>
+            <p>Deconstructing ambiguous challenges into discrete, measurable, and testable sub-problems before implementing code.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-bolt"></i></div>
+            <h3>Continuous Learning</h3>
+            <p>Embracing rapidly evolving technologies — from Oracle Cloud Infrastructure to distributed systems and data pipelines.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-icon"><i class="fas fa-users"></i></div>
+            <h3>Collaborative Spirit</h3>
+            <p>Actively valuing constructive feedback, empathetic communication, and open source community engagement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beyond the Code -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-heart"></i> Personal Interests</span>
+          <h2 class="section-title">Beyond <span class="gradient-text">Code</span></h2>
+          <p class="section-subtitle">Activities and curiosities that keep my perspective sharp.</p>
+        </div>
+
+        <div class="interests-grid-about">
+          <div class="interest-item-about">
+            <i class="fas fa-book-reader"></i>
+            <span>Tech Research</span>
+          </div>
+          <div class="interest-item-about">
+            <i class="fas fa-chess-knight"></i>
+            <span>Strategic Games</span>
+          </div>
+          <div class="interest-item-about">
+            <i class="fas fa-microchip"></i>
+            <span>Cloud &amp; DevOps</span>
+          </div>
+          <div class="interest-item-about">
+            <i class="fas fa-palette"></i>
+            <span>UI/UX Design</span>
+          </div>
+          <div class="interest-item-about">
+            <i class="fas fa-brain"></i>
+            <span>AI &amp; Algorithms</span>
+          </div>
+          <div class="interest-item-about">
+            <i class="fas fa-globe-americas"></i>
+            <span>Open Source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="section">
+      <div class="container">
+        <div class="resume-cta-card">
+          <div class="resume-cta-text">
+            <h3>Let's collaborate on impactful engineering</h3>
+            <p>Open for Software Engineering internships, technical discussions, and full-stack projects.</p>
+          </div>
+          <div class="resume-actions-group">
+            <a href="index.html#contact" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="index.html#projects" class="btn btn-secondary">
+              <i class="fas fa-layer-group"></i> Explore Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <a href="index.html" class="brand-logo">
+          Atharsh<span class="dot"></span>
+        </a>
+        <ul class="footer-links-list">
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="index.html#academics">Academics</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="index.html#certifications">Certifications</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Atharsh S. Built with modern web standards and hosted on GitHub Pages.</p>
+        <a href="#site-header" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="data/portfolio-data.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

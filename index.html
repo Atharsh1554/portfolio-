@@ -1,279 +1,590 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atharsh S - Portfolio</title>
-    <meta name="description" content="Portfolio of Atharsh S, a student at R.M.D Engineering College.">
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atharsh S — Developer Portfolio | Computer Science &amp; Engineering</title>
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Atharsh S — Developer Portfolio | Computer Science &amp; Engineering">
+  <meta name="description" content="Personal portfolio of Atharsh S, a 2nd-year B.E. Computer Science student at R.M.D. Engineering College. Featuring projects, academic semester records, verified certifications, and technical skills.">
+  <meta name="keywords" content="Atharsh S, Atharsh portfolio, Computer Science, RMD Engineering College, Web Development, Full Stack, OCI Certified, Python Data Science, Software Engineer Intern">
+  <meta name="author" content="Atharsh S">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://atharsh1554.github.io/portfolio-/">
+  <meta property="og:title" content="Atharsh S — Developer Portfolio">
+  <meta property="og:description" content="Computer Science &amp; Engineering student at R.M.D. Engineering College. Explore projects, academic records, and verified credentials.">
+  <meta property="og:image" content="profile.jpg.JPG">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://atharsh1554.github.io/portfolio-/">
+  <meta name="twitter:title" content="Atharsh S — Developer Portfolio">
+  <meta name="twitter:description" content="Computer Science &amp; Engineering student at R.M.D. Engineering College. Explore projects, academic records, and verified credentials.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="alternate icon" href="profile.jpg.JPG">
+
+  <!-- Google Fonts: Inter & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Atharsh<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
-        </nav>
-    </header>
+  <!-- ========================================================================
+       STICKY NAVIGATION BAR
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#hero" class="brand-logo" aria-label="Atharsh S Homepage">
+          Atharsh<span class="dot"></span>
+        </a>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero fade-in">
-            <div class="hero-content">
-                <p class="greeting">Hi, I am</p>
-                <h1 class="name">Atharsh S</h1>
-                <h2 class="role">Computer Science Student </h2>
-                <p class="summary">I build modern web applications and love solving complex problems with clean,
-                    efficient code.</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <!-- Profile Image -->
-                <img src="profile.jpg.JPG" alt="Atharsh S Headshot">
-            </div>
-        </section>
+        <!-- Desktop Menu -->
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#academics" class="nav-link">Academics</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
 
-        <!-- About Section -->
-        <section id="about" class="about fade-in">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Hello! I am Atharsh S, a dedicated 2nd-year B.E. Computer Science and Engineering student at
-                            R.M.D. Engineering College
-                            with a strong academic foundation and a passion for technology. I have completed Business
-                            Studies at the University of
-                            Cambridge, which has strengthened my management and strategic thinking skills alongside my
-                            technical expertise. As
-                            a CICSE alumnus, I bring discipline, adaptability, and a willingness to learn. My interests
-                            include software development,
-                            problem-solving, and innovation, and I am eager to apply my skills to academic projects,
-                            internships, and collaborative
-                            opportunities to grow both technically and professionally.</p>
-                        <div class="education">
-                            <h3>Education</h3>
-                            <div class="edu-item">
-                                <h4>B.E. Computer Science and Engineering</h4>
-                                <p>R.M.D Engineering College, Chennai</p>
-                                <p class="date">Present</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills fade-in">
-            <div class="container">
-                <h2 class="section-title">Technical Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Languages</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML5</span>
-                            <span class="tag">CSS3</span>
-                            <span class="tag">C/C++</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Frameworks & Libraries</h3>
-                        <div class="skill-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Express</span>
-                            <span class="tag">Pandas</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3>Tools & Platforms</h3>
-                        <div class="skill-tags">
-                            <span class="tag">Git</span>
-                            <span class="tag">GitHub</span>
-                            <span class="tag">VS Code</span>
-                            <span class="tag">Figma</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section id="certifications" class="certifications fade-in">
-            <div class="container">
-                <h2 class="section-title">Certifications</h2>
-                <div class="card-grid">
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-certificate"></i></div>
-                        <h3>Java Programming Fundamentals</h3>
-                        <p class="issuer">Infosys Springboard</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-project-diagram"></i></div>
-                        <h3>Introduction to Binary Trees & Sorting</h3>
-                        <p class="issuer">Infosys Springboard</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-chart-bar"></i></div>
-                        <h3>Oracle Cloud Infrastructure 2025</h3>
-                        <p class="issuer">ORACLE</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-medal"></i></div>
-                        <h3>Python for Data Science (Elite Grade)</h3>
-                        <p class="issuer">NPTEL</p>
-                    </div>
-                    <div class="card">
-                        <div class="card-icon"><i class="fas fa-leaf"></i></div>
-                        <h3>Energy Literacy Training</h3>
-                        <p class="issuer">Energy Swaraj Foundation</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects fade-in">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="project-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>GROOMER THE SLOT BOOKING SYSTEM</h3>
-                            <p></p>
-                            <div class="project-tags">
-                                <span class="tag">HTML/CSS</span>
-                                <span class="tag">JavaScript</span>
-                                <span class="tag">Node.js</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/Atharsh1554/groomer_mystrio" target="_blank"><i
-                                        class="fab fa-github"></i>
-                                    GitHub</a>
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Data Visualization Dashboard</h3>
-                            <p>An interactive dashboard analyzing datasets with comprehensive charts and real-time
-                                filtering options.</p>
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">Pandas</span>
-                                <span class="tag">Matplotlib</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/atharsh-s" target="_blank"><i class="fab fa-github"></i>
-                                    GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-content">
-                            <h3>Portfolio Website</h3>
-                            <p>A responsive, single-page personal portfolio website built with pure HTML, CSS, and
-                                Vanilla JavaScript.</p>
-                            <div class="project-tags">
-                                <span class="tag">HTML5</span>
-                                <span class="tag">CSS3</span>
-                                <span class="tag">JavaScript</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/atharsh-s" target="_blank"><i class="fab fa-github"></i>
-                                    GitHub</a>
-                                <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact fade-in">
-            <div class="container">
-                <h2 class="section-title">Get In Touch</h2>
-                <p class="contact-desc">I'm currently looking for new opportunities. Whether you have a question, a
-                    project idea, or just want to say hi, I'll try my best to get back to you!</p>
-
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <a href="mailto:atharshrmd@gmail.com" class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>atharshrmd@gmail.com</span>
-                        </a>
-                        <a href="https://github.com/Atharsh1554" target="_blank" class="contact-item">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/Atharsh1554</span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/atharsh-s-20462a282/" target="_blank" class="contact-item">
-                            <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/atharsh-s-20462a282/</span>
-                        </a>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Chennai, Tamil Nadu, India</span>
-                        </div>
-                    </div>
-
-                    <!-- Simple mailto form (No backend required) -->
-                    <form action="mailto:atharshrmd@gmail.com" method="post" enctype="text/plain" class="contact-form">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="Name" required placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="Email" required placeholder="Your Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="Message" rows="5" required
-                                placeholder="Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-block">Send Message via Email Client</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Atharsh S</p>
-            <a href="#hero" class="back-to-top" aria-label="Back to top">
-                <i class="fas fa-arrow-up"></i>
-            </a>
+        <!-- Action Items (Theme Toggle & Mobile Menu) -->
+        <div class="nav-actions">
+          <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Toggle light/dark theme" title="Toggle Theme">
+            <i class="fas fa-sun"></i>
+          </button>
+          <button id="hamburger-btn" class="hamburger-btn" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
-    </footer>
+      </nav>
+    </div>
+  </header>
 
-    <script src="script.js"></script>
+  <main>
+    <!-- ======================================================================
+         PHASE 3 — HERO SECTION
+         ====================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Hero Introduction -->
+          <div class="hero-content">
+            <div class="hero-greeting">
+              <span class="pulse-dot"></span>
+              <span>Hello, I am</span>
+            </div>
+            <h1 class="hero-title">Atharsh S</h1>
+            <div class="hero-roles">
+              <span>I am a&nbsp;</span>
+              <span id="hero-typing-role" class="role-typing">Computer Science Student</span>
+            </div>
+            <p class="hero-summary">
+              Dedicated 2nd-year B.E. Computer Science and Engineering student at R.M.D. Engineering College. Passionate about software development, cloud systems, and creating clean, resilient code solutions.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary">
+                <i class="fas fa-layer-group"></i> View Projects
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                <i class="fas fa-paper-plane"></i> Contact Me
+              </a>
+              <button class="btn btn-outline" onclick="openDocModal('Atharsh S — Curriculum Vitae', 'assets/documents/Atharsh_S_Resume.pdf', 'Resume / CV', false)">
+                <i class="fas fa-file-pdf"></i> Resume Preview
+              </button>
+            </div>
+            <div class="hero-socials">
+              <span class="social-label">Connect:</span>
+              <a href="https://github.com/Atharsh1554" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="GitHub Profile" title="GitHub Profile">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/atharsh-s-20462a282/" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn Profile" title="LinkedIn Profile">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:atharshrmd@gmail.com" class="social-icon-link" aria-label="Email Contact" title="Email Atharsh">
+                <i class="fas fa-envelope"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Hero Image Profile Card -->
+          <div class="hero-image-wrap">
+            <div class="profile-card-glass">
+              <div class="profile-photo-container">
+                <img src="profile.jpg.JPG" alt="Atharsh S — Computer Science Student" width="380" height="410">
+              </div>
+              <div class="profile-badge-float">
+                <div class="profile-badge-icon">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="profile-badge-text">
+                  <h4>B.E. Computer Science</h4>
+                  <p>R.M.D. Engineering College &bull; 2nd Year</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Subtle Scroll Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span>Scroll Down</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 4 — ABOUT ME & EDUCATION
+         ====================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-user"></i> Professional Background</span>
+          <h2 class="section-title">About <span class="gradient-text">Atharsh S</span></h2>
+          <p class="section-subtitle">Combining rigorous engineering principles with strategic management insights to craft scalable digital technology.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative & Focus -->
+          <div class="about-narrative">
+            <p>
+              I am a dedicated 2nd-year B.E. Computer Science and Engineering student at R.M.D. Engineering College with a solid academic foundation and an innate passion for technology.
+            </p>
+            <p>
+              Having completed Business Studies at the University of Cambridge, I combine management and strategic thinking skills alongside my technical expertise. As a CICSE alumnus, I bring discipline, adaptability, and an eager willingness to learn.
+            </p>
+            <p>
+              My technical interests center on modern software development, data structures &amp; algorithms, cloud infrastructure, and full-stack innovation. I actively seek collaborative opportunities, internships, and technical challenges to broaden my engineering impact.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-box">
+                <div class="box-icon"><i class="fas fa-graduation-cap"></i></div>
+                <h4>Academic Focus</h4>
+                <p>Data Structures, OOP in Java, Database Architecture, and Distributed Systems.</p>
+              </div>
+              <div class="highlight-box">
+                <div class="box-icon"><i class="fas fa-briefcase"></i></div>
+                <h4>Career Goal</h4>
+                <p>To excel as a high-impact Software Development Engineer building scalable cloud solutions.</p>
+              </div>
+              <div class="highlight-box">
+                <div class="box-icon"><i class="fas fa-globe"></i></div>
+                <h4>Global Perspective</h4>
+                <p>Cambridge Business Studies certification with focus on operations and strategic planning.</p>
+              </div>
+              <div class="highlight-box">
+                <div class="box-icon"><i class="fas fa-lightbulb"></i></div>
+                <h4>Problem Solving</h4>
+                <p>Curious, analytical, and dedicated to clean, well-tested, maintainable codebases.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Formal Education Records List -->
+          <div>
+            <div style="margin-bottom: 1.2rem; display: flex; align-items: center; justify-content: space-between;">
+              <h3 style="font-size: 1.35rem; font-weight: 700;">Education History</h3>
+              <a href="about.html" class="btn btn-outline btn-sm">
+                <i class="fas fa-book-open"></i> Full Journey Page
+              </a>
+            </div>
+            <!-- Injected by script.js from data/portfolio-data.js -->
+            <div id="education-cards-container" class="education-cards-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 5 — ACADEMIC RECORDS & SEMESTER DASHBOARD
+         ====================================================================== -->
+    <section id="academics" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-chart-line"></i> Academic Standing</span>
+          <h2 class="section-title">Academic Records &amp; <span class="gradient-text">Semester Results</span></h2>
+          <p class="section-subtitle">Real-time performance tracking across completed academic semesters at R.M.D. Engineering College (Anna University).</p>
+        </div>
+
+        <!-- Semester Dashboard Banner -->
+        <div class="academics-dashboard-wrap">
+          <div class="cgpa-banner-card">
+            <div class="cgpa-metric-visual">
+              <div class="cgpa-ring-outer">
+                <div class="cgpa-ring-inner">
+                  <span class="cgpa-big-number">8.45</span>
+                  <span class="cgpa-scale-label">CGPA / 10.0</span>
+                </div>
+              </div>
+              <div class="cgpa-title-block">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-cyan); font-weight: 700;">
+                  Cumulative Grade Point Average
+                </span>
+                <h3>Undergraduate Performance</h3>
+                <p>B.E. Computer Science and Engineering &bull; Anna University Scale (10.0)</p>
+              </div>
+            </div>
+
+            <div class="cgpa-meta-stats">
+              <div class="meta-stat-item">
+                <div class="meta-stat-value">Sem 3</div>
+                <div class="meta-stat-label">Latest Completed</div>
+              </div>
+              <div class="meta-stat-item">
+                <div class="meta-stat-value">3 / 8</div>
+                <div class="meta-stat-label">Completed Semesters</div>
+              </div>
+              <div class="meta-stat-item">
+                <div class="meta-stat-value">2027</div>
+                <div class="meta-stat-label">Expected Graduation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Semester-Wise Cards Grid -->
+        <div id="semester-cards-grid" class="semester-grid">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 9 — TECHNICAL SKILLS
+         ====================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-code"></i> Technical Stack</span>
+          <h2 class="section-title">Technical Skills &amp; <span class="gradient-text">Competencies</span></h2>
+          <p class="section-subtitle">Organized by specialization areas without arbitrary percentage meters, focusing on demonstrated capabilities.</p>
+        </div>
+
+        <div id="skills-categories-grid" class="skills-categories-grid">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 7 — INTERNSHIPS, TRAINING & WORKSHOPS
+         ====================================================================== -->
+    <section id="experience" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-briefcase"></i> Experience &amp; Learning</span>
+          <h2 class="section-title">Professional Training &amp; <span class="gradient-text">Programs</span></h2>
+          <p class="section-subtitle">Chronological record of academic credentials, software labs, and engineering workshops.</p>
+        </div>
+
+        <div id="experience-timeline-container" class="timeline-vertical">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 6 — CERTIFICATIONS & CREDENTIAL VERIFICATION
+         ====================================================================== -->
+    <section id="certifications" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-certificate"></i> Verified Knowledge</span>
+          <h2 class="section-title">Certifications &amp; <span class="gradient-text">Credentials</span></h2>
+          <p class="section-subtitle">Industry qualifications from Oracle, NPTEL, Infosys Springboard, Cambridge, and accredited institutions.</p>
+        </div>
+
+        <!-- Filter, Search and Sort Controls -->
+        <div class="cert-controls-bar">
+          <div class="cert-search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" id="cert-search-input" placeholder="Search by certificate title, issuer, or skill...">
+          </div>
+
+          <div class="cert-filter-pills">
+            <button class="filter-pill cert-filter-pill active" data-filter="all">All</button>
+            <button class="filter-pill cert-filter-pill" data-filter="cloud">Cloud &amp; OCI</button>
+            <button class="filter-pill cert-filter-pill" data-filter="programming">Programming &amp; DSA</button>
+            <button class="filter-pill cert-filter-pill" data-filter="datascience">Python &amp; Data Science</button>
+            <button class="filter-pill cert-filter-pill" data-filter="other">Management &amp; General</button>
+          </div>
+
+          <div>
+            <select id="cert-sort-select" class="cert-sort-select" aria-label="Sort Certifications">
+              <option value="newest">Sort: Newest First</option>
+              <option value="title">Sort: Title (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div id="certifications-grid" class="certifications-grid">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 8 — PROJECTS SHOWCASE
+         ====================================================================== -->
+    <section id="projects" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-laptop-code"></i> Engineered Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world applications solving tangible problems with clean architectures and interactive interfaces.</p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="projects-filter-bar">
+          <button class="filter-pill proj-filter-pill active" data-category="all">All Projects</button>
+          <button class="filter-pill proj-filter-pill" data-category="web">Web Development</button>
+          <button class="filter-pill proj-filter-pill" data-category="data">Python &amp; Data Science</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div id="projects-grid" class="project-grid">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 10 — ACHIEVEMENTS & RESUME
+         ====================================================================== -->
+    <section id="achievements" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-trophy"></i> Recognitions</span>
+          <h2 class="section-title">Achievements &amp; <span class="gradient-text">Honors</span></h2>
+          <p class="section-subtitle">Scholastic honors, national examination distinctions, and technical milestones.</p>
+        </div>
+
+        <div id="achievements-grid" class="achievements-grid">
+          <!-- Rendered dynamically by script.js from data/portfolio-data.js -->
+        </div>
+
+        <!-- Resume Call-to-Action Card -->
+        <div class="resume-cta-card">
+          <div class="resume-cta-text">
+            <span style="font-size: 0.82rem; text-transform: uppercase; letter-spacing: 1px; color: var(--accent-cyan); font-weight: 700;">
+              Curriculum Vitae
+            </span>
+            <h3>Looking for my complete resume?</h3>
+            <p>
+              Detailed documentation of undergraduate coursework, Cambridge Business Studies credential, technical projects, and industry certifications.
+            </p>
+            <p style="font-size: 0.85rem; color: var(--text-tertiary); margin-top: 0.4rem;">
+              <i class="far fa-clock"></i> Last updated: October 2026
+            </p>
+          </div>
+
+          <div class="resume-actions-group">
+            <button class="btn btn-secondary" onclick="openDocModal('Atharsh S — Resume', 'assets/documents/Atharsh_S_Resume.pdf', 'Official Resume', false)">
+              <i class="far fa-file-pdf"></i> Preview Resume
+            </button>
+            <a href="assets/documents/Atharsh_S_Resume.pdf" download="Atharsh_S_Resume.pdf" class="btn btn-primary doc-pending-trigger" data-doc-title="Atharsh S — Resume">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         PHASE 11 — CONTACT & PROFESSIONAL LINKS
+         ====================================================================== -->
+    <section id="contact" class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge"><i class="fas fa-envelope-open-text"></i> Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Interested in discussing an internship, project collaboration, or networking opportunity? Drop a message!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Verified Contact Cards -->
+          <div class="contact-info-panel">
+            <a href="mailto:atharshrmd@gmail.com" class="contact-card-link" title="Click to email Atharsh">
+              <div class="contact-icon-box">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Direct Email</h4>
+                <p>atharshrmd@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/Atharsh1554" target="_blank" rel="noopener noreferrer" class="contact-card-link" title="Visit GitHub Profile">
+              <div class="contact-icon-box">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="contact-details">
+                <h4>GitHub Profile</h4>
+                <p>github.com/Atharsh1554</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/atharsh-s-20462a282/" target="_blank" rel="noopener noreferrer" class="contact-card-link" title="Visit LinkedIn Profile">
+              <div class="contact-icon-box">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div class="contact-details">
+                <h4>LinkedIn Network</h4>
+                <p>linkedin.com/in/atharsh-s-20462a282/</p>
+              </div>
+            </a>
+
+            <div class="contact-card-link" style="cursor: default;">
+              <div class="contact-icon-box" style="color: var(--accent-emerald); background: rgba(16, 185, 129, 0.12);">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Validated Contact Form with direct mailto flow -->
+          <form id="contact-form" class="contact-form-glass">
+            <div class="form-group">
+              <label for="contact-name">Your Full Name <span style="color:var(--accent-rose);">*</span></label>
+              <input type="text" id="contact-name" class="form-control" placeholder="e.g. Alex Johnson" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email Address <span style="color:var(--accent-rose);">*</span></label>
+              <input type="email" id="contact-email" class="form-control" placeholder="e.g. alex@company.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Inquiry Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="e.g. Software Engineering Internship Opportunity">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message <span style="color:var(--accent-rose);">*</span></label>
+              <textarea id="contact-message" class="form-control" rows="5" placeholder="Share your project idea, opportunity, or inquiry..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fas fa-paper-plane"></i> Send Message via Email Client
+            </button>
+            <p class="form-helper-note">
+              <i class="fas fa-info-circle"></i> Opens your email application with pre-addressed recipient, subject, and message.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-row">
+        <a href="#hero" class="brand-logo">
+          Atharsh<span class="dot"></span>
+        </a>
+        <ul class="footer-links-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="about.html">About Page</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom-row">
+        <p>&copy; 2026 Atharsh S. Built with modern web standards and hosted on GitHub Pages.</p>
+        <a href="#hero" class="back-to-top-btn" aria-label="Back to top" title="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       DOCUMENT VIEWER MODAL (PHASE 5 & 6)
+       ======================================================================== -->
+  <div id="document-viewer-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-doc-title">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span id="modal-doc-badge" class="modal-doc-badge">Official Record</span>
+          <h3 id="modal-doc-title">Document Viewer</h3>
+        </div>
+        <div class="modal-header-actions">
+          <button id="modal-zoom-out-btn" class="modal-btn" aria-label="Zoom Out" title="Zoom Out">
+            <i class="fas fa-search-minus"></i>
+          </button>
+          <button id="modal-zoom-reset-btn" class="modal-btn" aria-label="Reset Zoom" title="Reset Zoom">
+            <i class="fas fa-undo"></i>
+          </button>
+          <button id="modal-zoom-in-btn" class="modal-btn" aria-label="Zoom In" title="Zoom In">
+            <i class="fas fa-search-plus"></i>
+          </button>
+          <a id="modal-doc-download-btn" href="#" download class="modal-btn" aria-label="Download Document" title="Download Document">
+            <i class="fas fa-download"></i>
+          </a>
+          <button class="modal-btn modal-btn-close" onclick="closeDocModal()" aria-label="Close Modal" title="Close (Esc)">
+            &times;
+          </button>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div id="modal-doc-frame-target" class="doc-frame-wrapper">
+          <!-- Injected dynamically: iframe, img, or missing fallback state -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       PROJECT DETAILS MODAL (PHASE 8)
+       ======================================================================== -->
+  <div id="project-details-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Project Details">
+    <div class="modal-container" style="max-width: 720px;">
+      <div class="modal-header">
+        <h3 style="font-size: 1.15rem;">Project Architecture &amp; Details</h3>
+        <button class="modal-btn modal-btn-close" onclick="closeProjectModal()" aria-label="Close Project Modal">
+          &times;
+        </button>
+      </div>
+      <div class="modal-body" id="project-details-modal-content">
+        <!-- Injected dynamically by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-notice" class="toast-notice" role="status" aria-live="polite"></div>
+
+  <!-- Central Data Store & Interactive Engine -->
+  <script src="data/portfolio-data.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
