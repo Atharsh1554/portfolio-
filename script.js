@@ -176,6 +176,33 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ==========================================================================
      5. RENDER ACADEMIC RECORDS & SEMESTER DASHBOARD (PHASE 5)
      ========================================================================== */
+  if (data.academics) {
+    const cgpaNumEl = document.querySelector('.cgpa-big-number');
+    const cgpaRingEl = document.querySelector('.cgpa-ring-outer');
+    const metaStatVals = document.querySelectorAll('.cgpa-meta-stats .meta-stat-value');
+
+    if (cgpaNumEl && data.academics.cumulativeCGPA) {
+      cgpaNumEl.textContent = data.academics.cumulativeCGPA;
+    }
+    if (cgpaRingEl && data.academics.cumulativeCGPA) {
+      const cgpaFloat = parseFloat(data.academics.cumulativeCGPA) || 0;
+      const cgpaScale = parseFloat(data.academics.cgpaScale) || 10.0;
+      const pct = Math.min(Math.max((cgpaFloat / cgpaScale) * 100, 0), 100);
+      cgpaRingEl.style.background = `conic-gradient(var(--accent-cyan) 0% ${pct}%, rgba(255, 255, 255, 0.08) ${pct}% 100%)`;
+    }
+    if (metaStatVals && metaStatVals.length >= 3) {
+      if (data.academics.latestCompletedSemester) {
+        metaStatVals[0].textContent = data.academics.latestCompletedSemester;
+      }
+      if (data.academics.completedSemestersCount !== undefined) {
+        metaStatVals[1].textContent = `${data.academics.completedSemestersCount} / ${data.academics.totalSemestersCount || 8}`;
+      }
+      if (data.academics.expectedGraduation) {
+        metaStatVals[2].textContent = data.academics.expectedGraduation;
+      }
+    }
+  }
+
   const semGridContainer = document.getElementById('semester-cards-grid');
   if (semGridContainer && data.academics && data.academics.semesters) {
     semGridContainer.innerHTML = data.academics.semesters.map(sem => {

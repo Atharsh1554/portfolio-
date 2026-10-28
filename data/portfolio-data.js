@@ -52,12 +52,12 @@ const PORTFOLIO_DATA = {
   // --------------------------------------------------------------------------
   academics: {
     // Current Cumulative Overview
-    cumulativeCGPA: "8.45", // UPDATE HERE: Enter your current official CGPA
+    cumulativeCGPA: "6.75", // Official CGPA
     cgpaScale: "10.0",
-    latestCompletedSemester: "Semester 3",
-    completedSemestersCount: 3,
+    latestCompletedSemester: "Semester 4",
+    completedSemestersCount: 4,
     totalSemestersCount: 8,
-    expectedGraduation: 2027,
+    expectedGraduation: 2028,
     status: "Active / In Good Standing",
     department: "Computer Science and Engineering",
 
@@ -70,10 +70,10 @@ const PORTFOLIO_DATA = {
         affiliation: "Anna University",
         location: "Chennai, Tamil Nadu",
         qualification: "B.E. Computer Science and Engineering",
-        duration: "2023 – 2027",
-        status: "Currently Pursuing (2nd Year)",
-        grade: "CGPA: 8.45 / 10.0",
-        marksheetUrl: "assets/documents/marksheet_sem3.pdf",
+        duration: "2024 – 2028",
+        status: "Currently Pursuing (3rd Year)",
+        grade: "CGPA: 6.75 / 10.0",
+        marksheetUrl: "assets/documents/marksheet_sem4.pdf",
         hasDocument: false, // Set to true once PDF is placed in assets/documents/
         highlights: "Core subjects: Data Structures, Object-Oriented Programming (Java), Database Systems, Computer Architecture, Discrete Mathematics."
       },
