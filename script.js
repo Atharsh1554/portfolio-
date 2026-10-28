@@ -463,15 +463,17 @@ document.addEventListener('DOMContentLoaded', () => {
   if (skillsGrid && data.skills) {
     const categoryConfigs = [
       { key: 'programmingLanguages', title: 'Programming Languages', icon: 'fa-code' },
-      { key: 'frontendDevelopment', title: 'Frontend Engineering', icon: 'fa-laptop-code' },
-      { key: 'backendDevelopment', title: 'Backend & Server Systems', icon: 'fa-server' },
-      { key: 'databasesAndData', title: 'Databases & Data Analytics', icon: 'fa-database' },
-      { key: 'cloudAndDevOps', title: 'Cloud, Platforms & DevOps', icon: 'fa-cloud' },
-      { key: 'developerTools', title: 'Developer Tools & Workflow', icon: 'fa-tools' }
+      { key: 'frontendDevelopment', title: 'Frontend Development', icon: 'fa-laptop-code' },
+      { key: 'backendDevelopment', title: 'Backend Development', icon: 'fa-server' },
+      { key: 'databases', altKey: 'databasesAndData', title: 'Databases & Storage', icon: 'fa-database' },
+      { key: 'cloudAndDevOps', title: 'Cloud Computing & DevOps', icon: 'fa-cloud' },
+      { key: 'developerTools', title: 'Development Tools & Testing', icon: 'fa-tools' },
+      { key: 'uiuxAndOther', title: 'UI/UX & Specialized Skills', icon: 'fa-palette' }
     ];
 
     skillsGrid.innerHTML = categoryConfigs.map(cat => {
-      const list = data.skills[cat.key] || [];
+      const list = data.skills[cat.key] || (cat.altKey ? data.skills[cat.altKey] : []) || [];
+      if (!list || list.length === 0) return '';
       return `
         <div class="skills-category-card">
           <div class="skills-category-header">

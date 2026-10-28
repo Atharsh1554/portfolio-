@@ -3,7 +3,7 @@
 > **Live Website:** [https://atharsh1554.github.io/portfolio-/](https://atharsh1554.github.io/portfolio-/)  
 > **GitHub Repository:** [https://github.com/Atharsh1554/portfolio-](https://github.com/Atharsh1554/portfolio-)
 
-A high-performance personal developer portfolio and academic hub engineered for **Atharsh S**, a 2nd-year B.E. Computer Science and Engineering student at R.M.D. Engineering College (Anna University) with international certification in Business Studies from the University of Cambridge.
+A high-performance personal developer portfolio and academic hub engineered for **Atharsh S**, a pre-final-year B.E. Computer Science and Engineering student at R.M.D. Engineering College (Anna University &bull; Joining Year 2024 &bull; Batch 2024–2028 &bull; Semesters 1–4 Completed &bull; Semester 5 Pursuing) with international certification in Business Studies from the University of Cambridge.
 
 Designed for software engineering internship applications, placement drives, recruiter reviews, and professional networking.
 
@@ -13,11 +13,11 @@ Designed for software engineering internship applications, placement drives, rec
 
 - **Visual Identity:** Sophisticated dark charcoal/deep navy theme (`#070a13`, `#0d1322`), tasteful electric-violet (`#8b5cf6`) and cyan (`#06b6d4`) accents, subtle glassmorphism, responsive typography (Inter &amp; Outfit), and smooth micro-animations.
 - **Theme Toggle:** Persistent light and dark mode switcher with `localStorage` memory and OS-preference fallback.
-- **Dynamic Typewriter Hero:** Cycling role titles ("Computer Science Student", "Software Developer", "Cloud & Problem Solving Enthusiast", "Full Stack Explorer") without layout shift.
-- **Academic Records & Semester Dashboard:** Cumulative CGPA visualization (conic gradient ring), semester-by-semester SGPA/CGPA cards, coursework breakdown, and marksheets tracker.
+- **Dynamic Typewriter Hero:** Cycling role titles ("Pre-Final Year CSE Student", "Software Developer", "Full Stack Engineer", "Cloud & Problem Solving Enthusiast") without layout shift.
+- **Academic Records & Semester Dashboard:** Cumulative CGPA visualization (conic gradient ring), semester-by-semester SGPA/CGPA cards (Semesters 1 through 5), coursework breakdown, and marksheets tracker.
 - **Built-in Document Viewer Modal:** In-browser modal viewer supporting PDFs and images with zoom controls (+ / - / reset), direct file downloads, keyboard accessibility (`Esc` to close), and informative fallback states for pending uploads.
 - **Certifications Showcase:** Real-time search by keyword/skill/issuer, domain category filters (*Cloud &amp; OCI*, *Programming &amp; DSA*, *Python &amp; Data Science*, *Management &amp; General*), and date sorting.
-- **Projects Showcase:** Interactive project cards with problem statements, architectural notes, technology pills, verified repository links, live demos, and a comprehensive **Project Details Modal**.
+- **Verified GitHub Projects:** Interactive cards for **BrokerHub** (Production Admin Platform), **ForenSight** (Multimodal AI Forensic Layout Generator), **Millet Market** (Farmer Procurement Marketplace), **Food Donation App**, **GROOMER**, and Portfolio.
 - **Centralized Data Model (`data/portfolio-data.js`):** Add a semester, certification, or project by updating a single configuration file—zero manual HTML rewriting required.
 - **Accessibility & SEO:** Semantic HTML5 (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), Open Graph metadata, ARIA labels, focus-visible outlines, and reduced-motion support.
 
@@ -42,10 +42,13 @@ week4_project/
 └── assets/
     ├── documents/               # Place your official PDFs & marksheets here
     │   ├── README.md            # File placement guide & filename conventions
-    │   ├── Atharsh_S_Resume.pdf # (Recommended resume PDF location)
+    │   ├── resume.pdf           # (Recommended resume PDF location)
     │   ├── marksheet_sem1.pdf   # (Semester 1 result)
     │   ├── marksheet_sem2.pdf   # (Semester 2 result)
     │   ├── marksheet_sem3.pdf   # (Semester 3 result)
+    │   ├── marksheet_sem4.pdf   # (Semester 4 result)
+    │   ├── marksheet_12th.pdf   # (Class XII result)
+    │   ├── marksheet_10th.pdf   # (Class X result)
     │   └── ...                  # Certificates (Infosys, OCI, NPTEL, etc.)
     │
     └── images/                  # Project banners, SVGs, and visual assets
