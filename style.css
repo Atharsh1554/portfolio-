@@ -2077,8 +2077,47 @@ input, textarea, select {
   opacity: 1;
 }
 
-/* --- 15. RESPONSIVE MEDIA QUERIES --- */
+/* --- 15. MOBILE NAV OVERLAY --- */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+.nav-overlay.active {
+  display: block;
+}
+
+/* --- 16. RESPONSIVE MEDIA QUERIES --- */
+
+/* ── Large Desktops (≤ 1200px) ── */
+@media (max-width: 1200px) {
+  .hero-grid {
+    gap: 2.5rem;
+  }
+
+  .hero-title {
+    font-size: 3.2rem;
+  }
+
+  .skills-categories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+/* ── Tablets / Small Laptops (≤ 1024px) ── */
 @media (max-width: 1024px) {
+  .hero-section {
+    padding-top: 100px;
+  }
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
@@ -2086,7 +2125,7 @@ input, textarea, select {
   }
 
   .hero-content {
-    max-width: 100%;
+    max-width: 680px;
     margin: 0 auto;
   }
 
@@ -2102,98 +2141,515 @@ input, textarea, select {
     justify-content: center;
   }
 
-  .about-grid,
-  .cgpa-banner-card,
-  .contact-grid {
+  .hero-image-wrap {
+    justify-content: center;
+  }
+
+  .profile-card-glass {
+    max-width: 340px;
+  }
+
+  /* About */
+  .about-grid {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-highlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Academics */
+  .cgpa-banner-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
   }
 
   .cgpa-metric-visual {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+
+  .cgpa-meta-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Contact */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Footer */
+  .footer-links-list {
+    gap: 1.2rem;
   }
 }
 
+/* ── Tablets Portrait / Large Phones (≤ 768px) ── */
 @media (max-width: 768px) {
+  html {
+    font-size: 15px;
+    scroll-padding-top: 75px;
+  }
+
+  /* Navigation */
   .nav-menu {
     position: fixed;
-    top: 75px;
+    top: 68px;
     right: -100%;
-    width: 280px;
-    height: calc(100vh - 75px);
+    width: min(280px, 80vw);
+    height: calc(100vh - 68px);
     background: var(--bg-secondary);
     border-left: 1px solid var(--surface-card-border);
     flex-direction: column;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 2rem 1.5rem;
     gap: 1.4rem;
     transition: right var(--transition-normal);
     box-shadow: var(--shadow-lg);
+    z-index: 1000;
+    overflow-y: auto;
   }
 
   .nav-menu.active {
     right: 0;
   }
 
+  .nav-link {
+    font-size: 1.05rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--surface-card-border);
+  }
+
+  .nav-link:last-of-type {
+    border-bottom: none;
+  }
+
   .hamburger-btn {
     display: inline-flex;
   }
 
-  .hero-title {
-    font-size: 2.8rem;
+  /* Section spacing */
+  .section {
+    padding: 4rem 0;
   }
 
   .section-title {
-    font-size: 2.1rem;
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Hero */
+  .hero-section {
+    padding-top: 90px;
+    padding-bottom: 3rem;
+  }
+
+  .hero-title {
+    font-size: 2.6rem;
+  }
+
+  .hero-roles {
+    font-size: 1.25rem;
+  }
+
+  .hero-summary {
+    font-size: 1rem;
+  }
+
+  .profile-card-glass {
+    max-width: 300px;
+  }
+
+  .profile-photo-container {
+    height: 350px;
+  }
+
+  /* About highlights */
+  .about-highlights-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-narrative {
+    padding: 1.8rem;
+  }
+
+  /* Academics */
+  .cgpa-banner-card {
+    padding: 1.6rem;
+  }
+
+  .cgpa-big-number {
+    font-size: 1.9rem;
   }
 
   .cgpa-meta-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.8rem;
   }
 
+  .semester-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  /* Certifications */
   .cert-controls-bar {
     flex-direction: column;
     align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
   }
 
   .cert-search-box {
     max-width: 100%;
+    min-width: unset;
   }
 
+  .cert-filter-pills {
+    justify-content: flex-start;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+
+  /* Projects */
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  /* Skills */
+  .skills-categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Achievements */
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  }
+
+  /* Resume CTA */
   .resume-cta-card {
     flex-direction: column;
     text-align: center;
+    padding: 2rem 1.5rem;
+  }
+
+  .resume-cta-text h3 {
+    font-size: 1.6rem;
   }
 
   .resume-actions-group {
     justify-content: center;
   }
-}
 
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2.3rem;
+  /* Contact */
+  .contact-form-glass {
+    padding: 1.8rem;
   }
 
-  .profile-photo-container {
-    height: 320px;
+  /* Footer */
+  .footer-top-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+  }
+
+  .footer-links-list {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  /* Modal */
+  .modal-container {
+    max-height: 95vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-header-actions {
+    gap: 0.4rem;
+  }
+
+  .doc-frame-wrapper {
+    height: 400px;
+  }
+}
+
+/* ── Large Phones (≤ 576px) ── */
+@media (max-width: 576px) {
+  .container {
+    width: 94%;
+    padding: 0 0.75rem;
+  }
+
+  /* Hero */
+  .hero-title {
+    font-size: 2.2rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-roles {
+    font-size: 1.1rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .hero-cta {
     flex-direction: column;
     width: 100%;
+    gap: 0.8rem;
   }
 
   .hero-cta .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  .profile-card-glass {
+    max-width: 100%;
+  }
+
+  .profile-photo-container {
+    height: 300px;
+  }
+
+  /* About */
+  .about-highlights-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Academics */
+  .cgpa-banner-card {
+    padding: 1.4rem 1rem;
+  }
+
+  .cgpa-ring-outer {
+    width: 110px;
+    height: 110px;
+  }
+
+  .cgpa-big-number {
+    font-size: 1.7rem;
+  }
+
+  .cgpa-meta-stats {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .semester-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Certifications filter pills — scrollable row */
+  .cert-filter-pills {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 0.4rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .cert-filter-pills::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-pill {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Skills */
+  .skill-row-badge {
+    padding: 0.5rem 0.75rem;
+  }
+
+  /* Projects */
+  .projects-filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    gap: 0.6rem;
+  }
+
+  .projects-filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .proj-filter-pill {
+    flex-shrink: 0;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-footer-actions {
     flex-direction: column;
-    width: 100%;
+    gap: 0.6rem;
   }
 
   .project-footer-actions .btn {
     width: 100%;
+    justify-content: center;
+  }
+
+  /* Contact */
+  .contact-card-link {
+    padding: 1rem 1.2rem;
+  }
+
+  .contact-form-glass {
+    padding: 1.4rem;
+  }
+
+  /* Modal */
+  .modal-overlay {
+    padding: 0.75rem;
+  }
+
+  .modal-container {
+    max-height: 97vh;
+  }
+
+  .modal-header {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .modal-title-group {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .modal-title-group h3 {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .doc-frame-wrapper {
+    height: 320px;
+  }
+
+  /* Footer */
+  .footer-links-list {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .site-footer {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  /* Buttons */
+  .btn {
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  /* Section headers */
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 3rem 0;
+  }
+
+  /* Toast */
+  .toast-notice {
+    bottom: 15px;
+    right: 15px;
+    left: 15px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ── Small Phones (≤ 400px) ── */
+@media (max-width: 400px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-roles {
+    font-size: 1rem;
+  }
+
+  .profile-photo-container {
+    height: 260px;
+  }
+
+  .brand-logo {
+    font-size: 1.35rem;
+  }
+
+  .section-title {
+    font-size: 1.65rem;
+  }
+
+  .cgpa-ring-outer {
+    width: 95px;
+    height: 95px;
+  }
+
+  .cgpa-big-number {
+    font-size: 1.5rem;
+  }
+
+  .about-narrative {
+    padding: 1.4rem 1rem;
+  }
+
+  .timeline-vertical {
+    padding-left: 22px;
+  }
+
+  .timeline-bullet-v {
+    left: -18px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline-content-v {
+    padding: 1.2rem;
+  }
+
+  .doc-frame-wrapper {
+    height: 260px;
   }
 }
 
