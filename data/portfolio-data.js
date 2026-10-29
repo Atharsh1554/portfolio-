@@ -50,6 +50,7 @@ const PORTFOLIO_DATA = {
     filePath: "assets/documents/resume.pdf",
     fileName: "resume.pdf",
     lastUpdated: "October 2026",
+    hasDocument: true,
     summary: "Pre-final year engineering resume detailing verified full-stack projects (BrokerHub, ForenSight, Millet Market), Oracle Cloud & Cambridge credentials, and academic coursework."
   },
 
